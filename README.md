@@ -3,14 +3,23 @@ The dataset consists of 484 Latent-Sensor and Latent-Latent pair of fingerprint 
 ## FVC-Latent_Test_Dataset
 
 FVC-Latent_Test_Dataset/
+
 └── data
+
     ├── VC2000DbsDb2a1
+    
     │   ├── clean
+    
     │   │   ├── 1_2.png
+    
     │   │   └── 1_2.xyt
+    
     │   └── latent
+    
     │       ├── 1_5.png
+    
     │       └── 1_5.xyt
+    
 
 
 ## Tsinghua-Latent_Test_Dataset
