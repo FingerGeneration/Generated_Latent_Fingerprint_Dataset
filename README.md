@@ -15,6 +15,16 @@ FVC-Latent_Test_Dataset/ <br />
 
 
 ## Tsinghua-Latent_Test_Dataset
+Tsinghua-Latent_Test_Dataset/ <br />
+└── Latent_Latent<br />
+    ├── 1<br />
+    │   ├── latent<br />
+    │   │   ├── 3_1_fake_0_25.xyt<br />
+    │   │   └── 3_1_fake.png<br />
+    │   └── sensor<br />
+    │       ├── 3_2_fake_0.xyt<br />
+    │       └── 3_2_fake.png<br />
+
 ## References
 [1] D. Maio, D. Maltoni, R. Cappelli, J.L. Wayman, and A.K.Jain. Fvc2000: fingerprint verification competition. IEEE Transactions on Pattern Analysis and Machine Intelligence, 24(3):402–412, 2002
 
