@@ -7,7 +7,7 @@ The dataset consists of 484 Latent-Sensor and Latent-Latent pair of fingerprint 
 |Tsinghua-Latent_Test_Dataset| 168|
 
 ## FVC-Latent_Test_Dataset
-Latent-Sensor pair images are placed in the same directory. Query latent image must be match with pair sensor image in the same directory by matcher.  The directory names can be translate to original FVC directory by VC2000DbsDb2a1 => FVC2000_Dbs/Db2_a/
+Latent-Sensor pair images are placed in the same directory. Query latent image (in the latent folder) must be match with pair sensor image (in the clean folder) in the same directory against all sensor image by matcher. The directory names can be translate to original FVC directory by VC2000DbsDb2a1 => FVC2000_Dbs/Db2_a/
 
 ### Directory Tree 
 FVC-Latent_Test_Dataset/ <br />
@@ -28,6 +28,10 @@ FVC-Latent_Test_Dataset/ <br />
 &nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── 10_6.xyt <br />
 
 ## Tsinghua-Latent_Test_Dataset
+ 
+Latent-Latent pair images are placed in the same directory. Query latent image (in the Latent folder) must be match with pair sensor image (in the sensor folder) in the same directory against all image which is placed in the sensor directory by matcher.
+
+**Tsinghudataset.xlsx :** 4-columns show the RangeStart-RangeEnd for each fingerprint ID. For instance, 2nd rows shows that images from 1_1.png to 10_1.png belong to same ID (therefore same finger). Therefore, we assigned the same ID name for these images. Unfortunately, dataset also contains multiple images of the same finger in non sequential manner.For instance, as row 7 shows that images 51_1.png to 60_1.png belong to finger ID number 6, but image names 103_1.png and 104_1.png (see row 13) also belong to the same finger. Therefore, we only use row 13 images when building the dataset. So, if SameID column value is not empty, it contains the ID number of the same image ID names. SameID values are not included in the final dataset.
 
 
 ### Directory Tree
